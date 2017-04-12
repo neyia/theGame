@@ -20,7 +20,7 @@ var config = {
     open: true,
     notify: false,
     injectChanges: true,
-    logPrefix: "Iz Lna"
+    logPrefix: "The game"
 };
 gulp.task('webserver', function () {
     browserSync(config);
@@ -39,6 +39,12 @@ gulp.task('images', function () {
     return gulp.src('src/images/*.png')
         .pipe(gulp.dest('build/images/'))
         .pipe(gulp.dest('build/images/')).pipe(reload({stream: true}));
+});
+/* Icons */
+gulp.task('icons', function () {
+    return gulp.src('src/icons/*.svg')
+        .pipe(gulp.dest('build/icons/'))
+        .pipe(gulp.dest('build/icons/')).pipe(reload({stream: true}));
 });
 /* Fonts */
 gulp.task('fonts', function () {
@@ -83,6 +89,9 @@ gulp.task('watch', ['webserver'], function () {
     });
     watch('src/images/*.png', function (event, cb) {
         gulp.start('images');
+    });
+    watch('src/icons/*.svg', function (event, cb) {
+        gulp.start('icons');
     });
     watch(['src/styles/*.less'], function (event, cb) {
         gulp.start('less');
