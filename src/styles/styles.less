@@ -1,14 +1,28 @@
-@import "footer";
-
 .container {
-    min-width: 940px;
-    max-width: 1146px;
-    margin:    0 auto;
-    .box-sizing();
+    min-width:             310px;
+    max-width:             1162px;
+    margin:                0 auto;
+    display:               flex;
+    -webkit-box-orient:    horizontal;
+    -webkit-box-direction: normal;
+    flex-flow:             row wrap;
+    justify-content:       space-between;
+    align-items:           center;
 
-    &:after {
-        .after();
+    @media only screen and (max-width: 1162px) {
+        padding: 0 6%;
     }
-
 }
 
+body{
+    font-family: 'Bebas Neue', "Courier New", Courier, monospace;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.page-content{
+    flex: 1;
+}

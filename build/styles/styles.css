@@ -1,3 +1,32 @@
-.footer {
-  background-color: #0f0f0d;
+.container {
+  min-width: 310px;
+  max-width: 1162px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1162px) {
+  .container {
+    padding: 0 6%;
+  }
+}
+body {
+  font-family: 'Bebas Neue', "Courier New", Courier, monospace;
+}
+.page-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.page-content {
+  -ms-flex: 1;
+  flex: 1;
 }
