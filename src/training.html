@@ -10,6 +10,7 @@
         <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="styles/normalized.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/panel.css"/>
         <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
 
@@ -20,60 +21,94 @@
 
         <div class="page-content">
             <section class="training">
-            <div class="container">
-                <div class="panel">
 
-                </div>
-                <div class="content">
-                    <div class="title">
-                        <div class="title__text">тренируйтесь перед игрой</div>
+                <div class="container">
+                    <div class="panel">
+                        <div class="portrait">
+                            <div class="portrait-bg"></div>
+                            <div class="portrait-img">
+                                <img src="images/portrait.png" class="portrait-img__item" alt="portrait" title="portrait"/>
+                            </div>
+                        </div>
+                        <div class="rating" data-rate="2">
+                            <i class="rating__star rating__star--active icon-star"></i>
+                            <i class="rating__star rating__star--active icon-star"></i>
+                            <i class="rating__star icon-star"></i>
+                            <i class="rating__star icon-star"></i>
+                            <i class="rating__star icon-star"></i>
+                        </div>
+                        <div class="author">
+                            <p class="author-name">
+                                Контантин
+                                Константинович
+                                Константинопольский
+                            </p>
+                        </div>
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-item menu-item--active">игра</li>
+                                <li class="menu-item">сообщения</li>
+                                <li class="menu-item">тренировка</li>
+                                <li class="menu-item">настройки</li>
+                                <li class="menu-item">страховка</li>
+                                <li class="menu-item">помощь</li>
+                                <li class="menu-item">статистика/рейтинг</li>
+                                <li class="menu-item">выход</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="badge">
 
-                        <div class="badge-list">
-                            <div class="badge-item">
-                                <div class="badge-level">
-                                    <span class="badge-level__item">01</span>
-                                    /
-                                    <span class="badge-level__item">04</span>
-                                </div>
-                                <div class="badge-image">
-                                    <div class="badge-image__item">
-                                        <div class="badge-image__locker"></div>
+                    <div class="content">
+                        <div class="title">
+                            <div class="title__text">тренируйтесь перед игрой</div>
+                        </div>
+                        <div class="badge">
+
+                            <div class="badge-list">
+                                <div class="badge-item">
+                                    <div class="badge-level">
+                                        <span class="badge-level__item">01</span>
+                                        /
+                                        <span class="badge-level__item">04</span>
+                                    </div>
+                                    <div class="badge-image">
+                                        <div class="badge-image__item">
+                                            <div class="badge-image__locker"></div>
+                                        </div>
+                                    </div>
+                                    <div class="badge-counter">
+                                        <div class="badge-counter__list">
+                                            <div class="badge-counter__item">2</div>
+                                            <div class="badge-counter__item">4</div>
+                                            <div class="badge-counter__item">5</div>
+                                            <div class="badge-counter__item">9</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="badge-counter">
-                                    <div class="badge-counter__list">
-                                        <div class="badge-counter__item">2</div>
-                                        <div class="badge-counter__item">4</div>
-                                        <div class="badge-counter__item">5</div>
-                                        <div class="badge-counter__item">9</div>
-                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="chat">
+                            <div class="chat-title">Вопрос по <span class="chat-title--secondary">истории</span></div>
+                            <div class="chat-window">
+                                <div class="chat-text">
+                                    <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
+                                    <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
+                                    <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
+                                    <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
+                                </div>
+                                <div class="chat-form">
+                                    <form>
+                                        <input type="text" class="control control-input" placeholder="Впишите ваш ответ" />
+                                        <input type="submit" class="control control-submit" value="Отправить" />
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="chat">
-                        <div class="chat-title">Вопрос по <span class="chat-title--secondary">истории</span></div>
-                        <div class="chat-window">
-                            <div class="chat-text">
-                                <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
-                                <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
-                                <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
-                                <p class="chat-text__item">Где леопард прячет добычу, которую не смог съесть?</p>
-                            </div>
-                            <div class="chat-form">
-                                <form>
-                                    <input type="text" class="control control-input" placeholder="Впишите ваш ответ" />
-                                    <input type="submit" class="control control-submit" value="Отправить" />
-                                </form>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+
+            </section>
         </div>
 
         <div class="footer">

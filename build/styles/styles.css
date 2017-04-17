@@ -27,6 +27,7 @@ body {
   flex-direction: column;
 }
 .page-content {
+  padding: 50px 0;
   -ms-flex: 1;
   flex: 1;
   background-image: url("../images/bg-old-paper.png");
