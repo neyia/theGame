@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="styles/normalized.css"/>
         <link rel="stylesheet" type="text/css" href="styles/panel.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/content.css"/>
         <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
 
@@ -24,36 +25,55 @@
 
                 <div class="container">
                     <div class="panel">
-                        <div class="portrait">
-                            <div class="portrait-bg"></div>
-                            <div class="portrait-img">
-                                <img src="images/portrait.png" class="portrait-img__item" alt="portrait" title="portrait"/>
+                        <div class="panel-bg">
+                            <div class="portrait">
+                                <div class="portrait-bg"></div>
+                                <div class="portrait-img">
+                                    <img src="images/portrait.png" class="portrait-img__item" alt="portrait" title="portrait"/>
+                                </div>
+                            </div>
+                            <div class="rating" data-rate="2">
+                                <i class="rating__star rating__star--active icon-star"></i>
+                                <i class="rating__star rating__star--active icon-star"></i>
+                                <i class="rating__star rating__star--active icon-star"></i>
+                                <i class="rating__star icon-star"></i>
+                                <i class="rating__star icon-star"></i>
+                                <i class="rating__star icon-star"></i>
                             </div>
                         </div>
-                        <div class="rating" data-rate="2">
-                            <i class="rating__star rating__star--active icon-star"></i>
-                            <i class="rating__star rating__star--active icon-star"></i>
-                            <i class="rating__star icon-star"></i>
-                            <i class="rating__star icon-star"></i>
-                            <i class="rating__star icon-star"></i>
-                        </div>
-                        <div class="author">
+                        <div class="author panel-bg panel-bg--middle">
                             <p class="author-name">
                                 Контантин
                                 Константинович
                                 Константинопольский
                             </p>
                         </div>
-                        <div class="menu">
+                        <div class="menu panel-bg panel-bg--last">
                             <ul class="menu-list">
-                                <li class="menu-item menu-item--active">игра</li>
-                                <li class="menu-item">сообщения</li>
-                                <li class="menu-item">тренировка</li>
-                                <li class="menu-item">настройки</li>
-                                <li class="menu-item">страховка</li>
-                                <li class="menu-item">помощь</li>
-                                <li class="menu-item">статистика/рейтинг</li>
-                                <li class="menu-item">выход</li>
+                                <li class="menu-item menu-item--active">
+                                    <a href="javascript:void(0)" class="menu-item__link">игра</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">сообщения</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">тренировка</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">настройки</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">страховка</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">помощь</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">статистика/рейтинг</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="javascript:void(0)" class="menu-item__link">выход</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +83,6 @@
                             <div class="title__text">тренируйтесь перед игрой</div>
                         </div>
                         <div class="badge">
-
                             <div class="badge-list">
                                 <div class="badge-item">
                                     <div class="badge-level">
@@ -85,8 +104,87 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="badge-item">
+                                    <div class="badge-level">
+                                        <span class="badge-level__item">01</span>
+                                        /
+                                        <span class="badge-level__item">04</span>
+                                    </div>
+                                    <div class="badge-image">
+                                        <div class="badge-image__item">
+                                            <div class="badge-image__locker"></div>
+                                        </div>
+                                    </div>
+                                    <div class="badge-counter">
+                                        <div class="badge-counter__list">
+                                            <div class="badge-counter__item">2</div>
+                                            <div class="badge-counter__item">4</div>
+                                            <div class="badge-counter__item">5</div>
+                                            <div class="badge-counter__item">9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <div class="badge-level">
+                                        <span class="badge-level__item">01</span>
+                                        /
+                                        <span class="badge-level__item">04</span>
+                                    </div>
+                                    <div class="badge-image">
+                                        <div class="badge-image__item">
+                                            <div class="badge-image__locker"></div>
+                                        </div>
+                                    </div>
+                                    <div class="badge-counter">
+                                        <div class="badge-counter__list">
+                                            <div class="badge-counter__item">2</div>
+                                            <div class="badge-counter__item">4</div>
+                                            <div class="badge-counter__item">5</div>
+                                            <div class="badge-counter__item">9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <div class="badge-level">
+                                        <span class="badge-level__item">01</span>
+                                        /
+                                        <span class="badge-level__item">04</span>
+                                    </div>
+                                    <div class="badge-image">
+                                        <div class="badge-image__item">
+                                            <div class="badge-image__locker"></div>
+                                        </div>
+                                    </div>
+                                    <div class="badge-counter">
+                                        <div class="badge-counter__list">
+                                            <div class="badge-counter__item">2</div>
+                                            <div class="badge-counter__item">4</div>
+                                            <div class="badge-counter__item">5</div>
+                                            <div class="badge-counter__item">9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <div class="badge-level">
+                                        <span class="badge-level__item">01</span>
+                                        /
+                                        <span class="badge-level__item">04</span>
+                                    </div>
+                                    <div class="badge-image">
+                                        <div class="badge-image__item">
+                                            <div class="badge-image__locker"></div>
+                                        </div>
+                                    </div>
+                                    <div class="badge-counter">
+                                        <div class="badge-counter__list">
+                                            <div class="badge-counter__item">2</div>
+                                            <div class="badge-counter__item">4</div>
+                                            <div class="badge-counter__item">5</div>
+                                            <div class="badge-counter__item">9</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                         <div class="chat">
                             <div class="chat-title">Вопрос по <span class="chat-title--secondary">истории</span></div>
@@ -107,7 +205,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
 
@@ -136,7 +233,8 @@
                     </ul>
                 </div>
                 <div class="footer-author">
-                    <span class="footer-author__item">designed by Aware</span>
+                    <span class="footer-author__item">designed by</span>
+                    <span class="footer-author__title">Aware</span>
                 </div>
             </div>
         </div>

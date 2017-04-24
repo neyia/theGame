@@ -1,21 +1,51 @@
 .panel {
-  background-image: url("../images/menu-bg.png");
-  background-repeat: no-repeat;
-  background-position: center 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  padding-bottom: 100px;
+}
+.panel-bg {
+  position: relative;
+  margin-bottom: 6px;
+}
+.panel-bg:before {
+  content: '';
+  background-image: url(../images/bg-rect-menu.png);
+  background-repeat: repeat-y;
+  background-position: center 0;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.panel-bg--middle:before {
+  height: 100%;
+}
+.panel-bg--last:before {
+  height: 100%;
+}
+.panel-bg--last:after {
+  content: '';
+  background-image: url(../images/bg-triangle-menu.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: -67px;
+  left: 0;
 }
 .portrait {
-  width: 319px;
+  width: 344px;
   height: 335px;
   line-height: 335px;
 }
 .portrait-bg {
   position: absolute;
-  height: 100%;
+  height: inherit;
   width: 100%;
   background-image: url("../images/portrait-border.png");
   background-position: center 0;
@@ -44,33 +74,72 @@
   position: relative;
   vertical-align: middle;
   border-radius: 50%;
+  width: 200px;
+  height: 180px;
+  margin: 20px 0 0 0;
+}
+.rating {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 0 20px 0;
 }
 .icon-star {
-  background-image: url("../images/star.svg");
+  background-image: url(../images/star.svg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26px;
+  width: 25px;
+  margin: 0 6px 0 5px;
+  z-index: 1;
+}
+.rating .rating__star--active {
+  background-image: url(../images/star--active.svg);
 }
 .author {
   padding: 0 10px;
 }
 .author-name {
+  position: relative;
   color: #e1e0cf;
   font-family: "Minion Pro", "Courier New", Courier, monospace;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
   text-align: center;
   word-wrap: break-word;
   white-space: pre-line;
+  padding: 0 0 15px;
 }
 .menu {
   text-align: center;
+  padding: 25px 0;
+}
+.menu-list {
+  z-index: 1;
+  position: relative;
 }
 .menu-item {
+  padding: 13px 0;
+}
+.menu-item__link {
   color: #e2e1cf;
-  font-family: "Bebas Neue", "Courier New", Courier, monospace;
-  font-size: 22px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 19px;
   font-weight: 400;
   line-height: 22px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 1s;
 }
-.menu-item--active {
+.menu-item:hover .menu-item__link {
+  color: #ffc363;
+}
+.menu-item--active .menu-item__link {
   color: #ffc363;
 }

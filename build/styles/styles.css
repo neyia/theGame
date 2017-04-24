@@ -1,10 +1,9 @@
 .container {
   min-width: 310px;
-  max-width: 1162px;
+  max-width: 1180px;
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -27,7 +26,7 @@ body {
   flex-direction: column;
 }
 .page-content {
-  padding: 50px 0;
+  padding: 40px 0;
   -ms-flex: 1;
   flex: 1;
   background-image: url("../images/bg-old-paper.png");

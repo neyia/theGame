@@ -15,7 +15,7 @@
 .social-list__item {
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 5px;
+  margin: 0 9px;
   border-radius: 50%;
 }
 .social-list__item-link {
@@ -43,10 +43,14 @@
   background-image: url("../icons/ok.svg");
   border: 2px solid #ee8208;
 }
-.footer-author__item {
+.footer-author {
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
+}
+.footer-author__item {
   color: #808080;
+}
+.footer-author__title {
   color: #e3e3d1;
 }

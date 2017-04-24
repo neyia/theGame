@@ -1,0 +1,107 @@
+
+.title {
+  background-image: url(../images/badge-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  &__text {
+    background-image: url(../images/badge-text-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #0f0f0d;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+}
+
+.content {
+  width: 760px;
+}
+
+.badge {
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &-item {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &-level {
+    border: 5px solid #ffffff;
+    border-radius: 21px;
+    padding: 7px 25px;
+    &__item {
+      color: #1d242a;
+      font-family: "Minion Pro", "Courier New", Courier, monospace;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 17px;
+    }
+  }
+  &-image {
+
+    &__item {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      box-shadow: 0 3px 5px rgba(15, 15, 13, 0.35);
+      background-color: #0f0f0d;
+    }
+    &__locker {
+      position: relative;
+      background-image: url(../images/badge-maze.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 100%;
+      height: 100%;
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/lock.png);
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 36px;
+        width: 25px;
+        top: 50%;
+        left: 50%;
+        margin: -18px 0 0 -13px;
+      }
+    }
+  }
+  &-counter {
+    &__list {
+      display: flex;
+      flex-flow: wrap row;
+    }
+    &__item {
+      background-image: url(../images/conter-basis.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-shadow: 0 1px 5px #000000;
+      color: #ffffff;
+      font-family: "Myriad Pro", "Trebuchet MS", sans-serif;
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center;
+      height: 36px;
+      width: 25px;
+    }
+  }
+}
