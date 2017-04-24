@@ -1,0 +1,26 @@
+.title {
+  background-image: url(../images/badge-title-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.title__text {
+  background-image: url(../images/badge-text-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #0f0f0d;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+.content {
+  width: 760px;
+}
