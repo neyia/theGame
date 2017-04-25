@@ -6,8 +6,8 @@
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .badge-item {
   display: -ms-flexbox;
