@@ -22,5 +22,12 @@
   padding: 5px 0;
 }
 .content {
-  width: 760px;
+  -ms-flex: 0 64.45%;
+  flex: 0 64.45%;
+}
+@media only screen and (max-width: 1080px) {
+  .content {
+    -ms-flex: 0 61%;
+    flex: 0 61%;
+  }
 }
