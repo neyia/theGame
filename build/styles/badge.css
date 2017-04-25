@@ -2,125 +2,127 @@
   margin: 35px 0;
 }
 .badge-list {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -ms-flex-align: start;
   align-items: flex-start;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media only screen and (max-width: 1080px) {
   .badge-list {
-    -ms-flex-flow: wrap;
-    flex-flow: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
   }
 }
 .badge-item {
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-flow: column;
   flex-flow: column;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media only screen and (max-width: 1080px) {
   .badge-item {
-    width: 140px;
     margin-bottom: 20px;
+    width: 140px;
   }
 }
-.badge-level {
-  border: 5px solid #ffffff;
-  border-radius: 21px;
-  padding: 7px 30px;
-  margin-bottom: 10px;
-}
-.badge-level__item {
-  color: #1d242a;
-  font-family: "Minion Pro", "Courier New", Courier, monospace;
-  font-size: 21px;
-  font-weight: 600;
-  line-height: 17px;
-}
 .badge-image__item {
+  box-shadow: 0 3px 5px rgba(15, 15, 13, 0.35);
+  background-color: #0f0f0d;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  box-shadow: 0 3px 5px rgba(15, 15, 13, 0.35);
-  background-color: #0f0f0d;
 }
 .badge-image__locker {
-  position: relative;
   background-image: url(../images/badge-maze.png);
   background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   background-size: contain;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
 .badge-image__locker:before {
-  content: '';
-  position: absolute;
   background-image: url(../images/lock.png);
-  background-position: center 0;
+  margin: -18px 0 0 -13px;
   background-repeat: no-repeat;
+  position: absolute;
+  background-position: center 0;
   background-size: cover;
   height: 36px;
   width: 25px;
   top: 50%;
   left: 50%;
-  margin: -18px 0 0 -13px;
+  content: '';
+}
+.badge-item--active .badge-image__locker {
+  background-image: url(../images/badge-maze--active.png);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.badge-item--active .badge-image__locker:before {
+  background-image: none;
+  transition: all 2s ease;
+  width: 100%;
+  top: auto;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+.badge-item--active .badge-image__locker--60:before {
+  background-color: rgba(0, 176, 255, 0.7);
+  height: 60%;
+}
+.badge-item--active .badge-image__locker--60:hover:before {
+  height: 100%;
+}
+.badge-level {
+  border: 5px solid #ffffff;
+  padding: 7px 30px;
+  border-radius: 21px;
+  margin-bottom: 10px;
+}
+.badge-level__item {
+  font-size: 21px;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: "Minion-Pro", "Sans";
+  color: #1d242a;
 }
 .badge-counter {
   margin: 16px 0 0 0;
 }
 .badge-counter__list {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-flow: wrap row;
   flex-flow: wrap row;
+  display: -ms-flexbox;
+  display: flex;
 }
 .badge-counter__item {
   background-image: url(../images/conter-basis.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-shadow: 0 1px 5px #000000;
+  background-repeat: no-repeat;
   color: #ffffff;
-  font-family: "Myriad Pro", "Trebuchet MS", sans-serif;
-  font-size: 27px;
-  font-weight: 700;
+  background-position: center;
   text-align: center;
+  background-size: cover;
   height: 43px;
   width: 30px;
   margin-right: 1px;
-}
-.badge-item--active .badge-image__locker {
-  background-image: url(../images/badge-maze--active.png);
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-}
-.badge-item--active .badge-image__locker:before {
-  background-image: none;
-  width: 100%;
-  height: 0;
-  top: auto;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  transition: all 2s ease;
-}
-.badge-item--active .badge-image__locker--60:before {
-  height: 60%;
-  background-color: rgba(0, 176, 255, 0.7);
-}
-.badge-item--active .badge-image__locker--60:hover:before {
-  height: 100%;
+  font-family: "Myriad-Pro", "Sans";
+  font-weight: 100;
+  font-size: 27px;
+  line-height: 43px;
+  font-weight: 700;
 }

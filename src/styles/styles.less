@@ -1,13 +1,13 @@
+@import "mixins";
+
 .container {
-    min-width:             980px;
-    max-width:             1180px;
-    margin:                0 auto;
-    display:               flex;
-    -webkit-box-orient:    horizontal;
-    -webkit-box-direction: normal;
-    flex-flow:             row wrap;
-    justify-content:       space-between;
-    align-items:           center;
+    min-width:       980px;
+    max-width:       1180px;
+    margin:          0 auto;
+    display:         flex;
+    flex-flow:       row wrap;
+    justify-content: space-between;
+    align-items:     center;
 
     @media only screen and (max-width: 1200px) {
         padding: 0 4%;
@@ -15,20 +15,59 @@
 }
 
 body {
-    font-family: 'Bebas Neue', "Courier New", Courier, monospace;
+    .font-family-bebas();
 }
 
 .page-wrapper {
-    display:        flex;
     min-height:     100vh;
+    display: -ms-flexbox;
+    display:        flex;
+    -ms-flex-direction: column;
     flex-direction: column;
+
+
 }
 
 .page-content {
+    background-image:    url("../images/bg-old-paper.png");
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-size:     cover;
     padding:             40px 0;
     flex:                1;
-    background-image:    url("../images/bg-old-paper.png");
-    background-position: center;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        min-height: 100vh;
+        flex: auto;
+    }
+}
+
+.control {
+    &::-webkit-input-placeholder {
+        .font-styles(20px, normal, 400);
+        .font-family-minion();
+        color:       #8c959e;
+        font-style:  italic;
+    }
+
+    &::-moz-placeholder {
+        .font-styles(20px, normal, 400);
+        .font-family-minion();
+        color:       #8c959e;
+        font-style:  italic;
+    }
+
+    &:-ms-input-placeholder {
+        .font-styles(20px, normal, 400);
+        .font-family-minion();
+        color:       #8c959e;
+        font-style:  italic;
+    }
+
+    &:-moz-placeholder {
+        .font-styles(20px, normal, 400);
+        .font-family-minion();
+        color:       #8c959e;
+        font-style:  italic;
+    }
 }

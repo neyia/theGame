@@ -1,12 +1,13 @@
 .footer {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
   background-color: #0f0f0d;
   padding: 18px 0;
-}
-.footer-copyright__item {
   color: #808080;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
+}
+.footer-author__title {
+  color: #e3e3d1;
 }
 .social-list {
   display: -ms-flexbox;
@@ -42,15 +43,4 @@
 .social-list__item--ok {
   background-image: url("../icons/ok.svg");
   border: 2px solid #ee8208;
-}
-.footer-author {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-}
-.footer-author__item {
-  color: #808080;
-}
-.footer-author__title {
-  color: #e3e3d1;
 }

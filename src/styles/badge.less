@@ -1,122 +1,127 @@
+@import "mixins";
 
 .badge {
     margin: 35px 0;
-    &-list {
-        display:         flex;
-        justify-content: space-around;
-        align-items:     flex-start;
+}
 
-        @media only screen and (max-width: 1080px) {
-            flex-flow: wrap;
-            align-items: stretch;
-            justify-content: center;
-        }
-    }
-    &-item {
-        display:         flex;
-        flex-flow:       column;
-        align-items:     center;
-        justify-content: flex-start;
+.badge-list {
+    justify-content: space-around;
+    align-items:     flex-start;
+    display:         flex;
 
-        @media only screen and (max-width: 1080px) {
-            width: 140px;
-            margin-bottom: 20px;
-        }
+    @media only screen and (max-width: 1080px) {
+        justify-content: center;
+        align-items:     stretch;
+        flex-flow:       wrap;
     }
+}
 
-    &-level {
-        border:        5px solid #ffffff;
-        border-radius: 21px;
-        padding:       7px 30px;
-        margin-bottom: 10px;
-        &__item {
-            color:       #1d242a;
-            font-family: "Minion Pro", "Courier New", Courier, monospace;
-            font-size:   21px;
-            font-weight: 600;
-            line-height: 17px;
-        }
+.badge-item {
+    justify-content: flex-start;
+    flex-flow:       column;
+    align-items:     center;
+    display:         flex;
+
+    @media only screen and (max-width: 1080px) {
+        margin-bottom: 20px;
+        width:         140px;
     }
-    &-image {
-        &__item {
-            width:            120px;
-            height:           120px;
-            border-radius:    50%;
-            box-shadow:       0 3px 5px rgba(15, 15, 13, 0.35);
-            background-color: #0f0f0d;
-        }
-        &__locker {
-            position:            relative;
-            background-image:    url(../images/badge-maze.png);
+}
+
+.badge-image {
+    &__item {
+        box-shadow:       0 3px 5px rgba(15, 15, 13, 0.35);
+        background-color: #0f0f0d;
+        width:            120px;
+        height:           120px;
+        border-radius:    50%;
+    }
+    &__locker {
+        background-image:    url(../images/badge-maze.png);
+        background-repeat:   no-repeat;
+        position:            relative;
+        background-size:     contain;
+        background-position: center;
+        width:               100%;
+        height:              100%;
+        &:before {
+            background-image:    url(../images/lock.png);
+            margin:              -18px 0 0 -13px;
             background-repeat:   no-repeat;
-            background-position: center;
-            background-size:     contain;
-            width:               100%;
-            height:              100%;
-            &:before {
-                content:             '';
-                position:            absolute;
-                background-image:    url(../images/lock.png);
-                background-position: center 0;
-                background-repeat:   no-repeat;
-                background-size:     cover;
-                height:              36px;
-                width:               25px;
-                top:                 50%;
-                left:                50%;
-                margin:              -18px 0 0 -13px;
-            }
-        }
-    }
-    &-counter {
-        margin: 16px 0 0 0;
-        &__list {
-            display:   flex;
-            flex-flow: wrap row;
-        }
-        &__item {
-            background-image:    url(../images/conter-basis.png);
-            background-position: center;
-            background-repeat:   no-repeat;
+            position:            absolute;
+            background-position: center 0;
             background-size:     cover;
-            text-shadow:         0 1px 5px #000000;
-            color:               #ffffff;
-            font-family:         "Myriad Pro", "Trebuchet MS", sans-serif;
-            font-size:           27px;
-            font-weight:         700;
-            text-align:          center;
-            height:              43px;
-            width:               30px;
-            margin-right:        1px;
+            height:              36px;
+            width:               25px;
+            top:                 50%;
+            left:                50%;
+            content:             '';
         }
     }
-    &-item--active {
-        .badge-image__locker {
-            background-image: url(../images/badge-maze--active.png);
-            border-radius:    50%;
-            position:         relative;
-            overflow:         hidden;
-            &:before {
-                background-image: none;
-                width:            100%;
-                height:           0;
-                top:              auto;
-                bottom:           0;
-                left:             0;
-                margin:           0;
-                transition:       all 2s ease;
-            }
+}
+
+.badge-item--active {
+    .badge-image__locker {
+        background-image: url(../images/badge-maze--active.png);
+        position:         relative;
+        overflow:         hidden;
+        border-radius:    50%;
+        &:before {
+            background-image: none;
+            transition:       all 2s ease;
+            width:            100%;
+            top:              auto;
+            height:           0;
+            bottom:           0;
+            left:             0;
+            margin:           0;
         }
-        .badge-image__locker--60 {
+    }
+    .badge-image__locker--60 {
+        &:before {
+            background-color: rgba(0, 176, 255, 0.7);
+            height:           60%;
+        }
+        &:hover {
             &:before {
-                height:           60%;
-                background-color: rgba(0, 176, 255, 0.7);
-            }
-            &:hover {
-                &:before {
-                    height: 100%;
-                }
+                height: 100%;
             }
         }
     }
 }
+
+.badge-level {
+    border:        5px solid #ffffff;
+    padding:       7px 30px;
+    border-radius: 21px;
+    margin-bottom: 10px;
+
+    &__item {
+        .font-styles(21px, 17px, 600);
+        .font-family-minion();
+        color: #1d242a;
+    }
+}
+
+.badge-counter {
+    margin: 16px 0 0 0;
+    &__list {
+        flex-flow: wrap row;
+        display:   flex;
+    }
+    &__item {
+        background-image:    url(../images/conter-basis.png);
+        text-shadow:         0 1px 5px #000000;
+        background-repeat:   no-repeat;
+        color:               #ffffff;
+        background-position: center;
+        text-align:          center;
+        background-size:     cover;
+        height:              43px;
+        width:               30px;
+        margin-right:        1px;
+        .font-family-myriad();
+        .font-styles(27px, 43px, 700);
+    }
+}
+

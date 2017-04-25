@@ -1,3 +1,5 @@
+@import "mixins";
+
 .chat {
     background-image:  url(../images/message-middle-bg.png);
     background-repeat: repeat-y;
@@ -9,7 +11,7 @@
     text-align:        center;
 
     @media only screen and (max-width: 1080px) {
-        width: 500px;
+        width:  500px;
         margin: 0 auto;
     }
 
@@ -25,8 +27,8 @@
         top:                 -30px;
         left:                0;
         @media only screen and (max-width: 1080px) {
-            background-size:     contain;
-            top: -27px;
+            background-size: contain;
+            top:             -27px;
         }
     }
     &:after {
@@ -41,18 +43,16 @@
         bottom:              -30px;
         left:                0;
         @media only screen and (max-width: 1080px) {
-            background-size:     contain;
-            bottom: -27px;
+            background-size: contain;
+            bottom:          -27px;
         }
     }
 
     &-title {
-        color:       #1d242a;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-size:   24px;
-        line-height: 17px;
-        font-weight: 400;
+        .font-styles(24px, 17px, 400);
         position:    relative;
+        color:       #1d242a;
+        .font-family-minion();
 
         &:before {
             content:             '';
@@ -91,30 +91,27 @@
     position: relative;
 }
 
-.chat-lion {
-    &:after {
-        content:           '';
-        position:          absolute;
-        top:               -5px;
-        right:             -2px;
-        width:             175px;
-        height:            220px;
-        background-image:  url(../images/lion.png);
-        background-repeat: no-repeat;
-        background-size:   contain;
-    }
+.chat-lion:after {
+    content:           '';
+    position:          absolute;
+    top:               -5px;
+    right:             -2px;
+    width:             175px;
+    height:            220px;
+    background-image:  url(../images/lion.png);
+    background-repeat: no-repeat;
+    background-size:   contain;
 }
 
 .chat-text {
     padding-left: 35px;
     max-width:    550px;
     text-align:   left;
+
     &__item {
+        .font-styles(20px, 24px, 400);
+        .font-family-minion();
         color:       #1d242a;
-        font-size:   20px;
-        line-height: 24px;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-weight: 400;
     }
 }
 
@@ -142,6 +139,7 @@
         background-color: #ffd99e;
         border-radius:    50%;
     }
+
     &:after {
         content:          '';
         position:         absolute;
@@ -154,66 +152,27 @@
     }
 }
 
-.control {
-
-    &::-webkit-input-placeholder {
-        color:       #8c959e;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-size:   20px;
-        line-height: 17px;
-        font-style:  italic;
-    }
-
-    &::-moz-placeholder {
-        color:       #8c959e;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-size:   20px;
-        line-height: 17px;
-        font-style:  italic;
-    }
-
-    &:-ms-input-placeholder {
-        color:       #8c959e;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-size:   20px;
-        line-height: 17px;
-        font-style:  italic;
-    }
-
-    &:-moz-placeholder {
-        color:       #8c959e;
-        font-family: "Minion Pro", "Trebuchet MS", sans-serif;
-        font-size:   20px;
-        line-height: 17px;
-        font-style:  italic;
-    }
-}
-
 .control-input {
-    border-radius:    4px;
     border:           2px solid #ffd99e;
+    .font-styles(20px, 17px, 400);
     background-color: #f5f4e5;
     color:            #1d242a;
-    font-family:      "Trebuchet MS", sans-serif;
-    font-size:        20px;
-    line-height:      17px;
     padding:          10px 20px;
     flex:             0 100%;
     margin-right:     10px;
+    border-radius:    4px;
+
     @media only screen and (max-width: 1080px) {
         margin: 0 0 10px 0;
     }
 }
 
 .control-submit {
-    border-radius:    4px;
+    box-shadow:       0 3px 5px rgba(15, 15, 13, 0.35);
+    border-color:     transparent;
+    padding:          10px 60px;
+    .font-styles(20px, 22px, 400);
     background-color: #00b0ff;
     color:            #ffffff;
-    font-family:      "Trebuchet MS", sans-serif;
-    font-size:        20px;
-    font-weight:      400;
-    line-height:      22px;
-    border-color:     transparent;
-    box-shadow:       0 3px 5px rgba(15, 15, 13, 0.35);
-    padding:          10px 60px;
+    border-radius:    4px;
 }

@@ -17,21 +17,60 @@
   }
 }
 body {
-  font-family: 'Bebas Neue', "Courier New", Courier, monospace;
+  font-family: "Bebas Neue", "Trebuchet MS";
 }
 .page-wrapper {
+  min-height: 100vh;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 .page-content {
+  background-image: url("../images/bg-old-paper.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 40px 0;
   -ms-flex: 1;
   flex: 1;
-  background-image: url("../images/bg-old-paper.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .page-content {
+    min-height: 100vh;
+    -ms-flex: auto;
+    flex: auto;
+  }
+}
+.control::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Minion-Pro", "Sans";
+  color: #8c959e;
+  font-style: italic;
+}
+.control::-moz-placeholder {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Minion-Pro", "Sans";
+  color: #8c959e;
+  font-style: italic;
+}
+.control:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Minion-Pro", "Sans";
+  color: #8c959e;
+  font-style: italic;
+}
+.control:-moz-placeholder {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Minion-Pro", "Sans";
+  color: #8c959e;
+  font-style: italic;
 }
