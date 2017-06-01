@@ -137,12 +137,11 @@
   padding: 13px 0;
 }
 .menu-item__link {
-  font-size: 19px;
+  font-size: 22px;
   line-height: 22px;
   font-weight: 400;
   text-transform: uppercase;
   color: #e2e1cf;
-  letter-spacing: -0.02em;
   transition: all 1s;
   text-decoration: none;
 }
