@@ -6,6 +6,17 @@
   display: -ms-flexbox;
   display: flex;
 }
+.panel:before {
+  background-image: url(../images/theBird.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100px;
+  background-position: 50% 0;
+  content: '';
+  top: 220px;
+  left: -70px;
+}
 .panel-bg {
   position: relative;
   margin-bottom: 6px;

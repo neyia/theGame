@@ -19,10 +19,12 @@
   color: #0f0f0d;
   letter-spacing: -0.025em;
   padding: 5px 0;
+  margin-top: -5px;
 }
 .content {
   -ms-flex: 0 64.45%;
   flex: 0 64.45%;
+  margin-top: 100px;
 }
 @media only screen and (max-width: 1080px) {
   .content {
