@@ -26,14 +26,14 @@
     &:before {
         background-image:    url(../images/chain.png);
         background-position: 50% 0;
-        background-repeat: no-repeat;
-        position: absolute;
-        height: 60px;
-        width: 100px;
-        content: '';
-        bottom: -10px;
-        left: -70px;
-        z-index: 0;
+        background-repeat:   no-repeat;
+        position:            absolute;
+        height:              60px;
+        width:               100px;
+        content:             '';
+        bottom:              -10px;
+        left:                -70px;
+        z-index:             0;
 
         @media only screen and (max-width: 1080px) {
             display: none;
@@ -52,7 +52,7 @@
 
 .badge-image {
     position: relative;
-    z-index: 1;
+    z-index:  1;
     &__item {
         box-shadow:       0 3px 5px rgba(15, 15, 13, 0.35);
         background-color: #0f0f0d;
@@ -92,7 +92,7 @@
         border-radius:    50%;
         &:before {
             background-image: none;
-            transition:       all 2s ease;
+            transition:       all 10s ease;
             width:            100%;
             top:              auto;
             height:           0;
@@ -101,15 +101,10 @@
             margin:           0;
         }
     }
-    .badge-image__locker--60 {
+    .badge-image__locker--ready {
         &:before {
             background-color: rgba(0, 176, 255, 0.7);
-            height:           60%;
-        }
-        &:hover {
-            &:before {
-                height: 100%;
-            }
+            height:           100%;
         }
     }
 }
@@ -134,18 +129,19 @@
         display:   flex;
     }
     &__item {
-        background-image:    url(../images/conter-basis.png);
+        background-image:    url('../images/counter.png');
         text-shadow:         0 1px 5px #000000;
-        background-repeat:   no-repeat;
+        background-repeat:   repeat-x;
         color:               #ffffff;
-        background-position: center;
+        background-position: -2px 2px;
         text-align:          center;
-        background-size:     cover;
-        height:              43px;
-        width:               30px;
+        background-size:     contain;
+        height:              40px;
+        width:               60px;
         margin-right:        1px;
+        letter-spacing:      0.8rem;
+        padding:             0 0 0 7px;
         .font-family-myriad();
         .font-styles(27px, 43px, 700);
     }
 }
-
