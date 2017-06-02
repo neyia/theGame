@@ -11,6 +11,10 @@
     &__title {
         color: #e3e3d1;
     }
+    &__link{
+        color: #808080;
+        text-decoration: none;
+    }
 }
 
 .social-list {
@@ -20,35 +24,59 @@
         background-position: center;
         margin:              0 9px;
         border-radius:       50%;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition:    all 1s ease-out;
+        -o-transition:      all 1s ease-out;
+        transition:         all 1s ease-out;
 
         &-link {
             display: flex;
             padding: 20px;
+
         }
 
         &--fb {
             background-image: url("../icons/fb.svg");
             border:           2px solid #547bbd;
+
+            &:hover{
+                background-color: #547bbd;
+            }
         }
 
         &--vk {
             background-image: url("../icons/vk.svg");
             border:           2px solid #3f63a9;
+
+            &:hover {
+                background-color: #3f63a9;
+            }
+
         }
 
         &--tw {
             background-image: url("../icons/tw.svg");
             border:           2px solid #49b5e5;
+
+            &:hover {
+                background-color: #49b5e5;
+            }
         }
 
         &--inst {
             background-image: url("../icons/inst.svg");
             border:           2px solid #ff00d2;
+            &:hover{
+                background-color: #ff00d2;
+            }
         }
 
         &--ok {
             background-image: url("../icons/ok.svg");
             border:           2px solid #ee8208;
+            &:hover{
+                background-color: #ee8208;
+            }
         }
 
     }
