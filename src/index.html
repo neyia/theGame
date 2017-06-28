@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+    <html>
+        <title>index theGame</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="TheGame"/>
+        <meta name="keywords" content="TheGame"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/normalized.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/panel.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/content.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/badge.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/chat.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/btn.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/links.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+
+    <body>
+
+    <div class="page-wrapper">
+
+        <div class="page-content page-content--main">
+            <section class="main">
+                <div class="main-picture main-pic-bottom"></div>
+                <div class="main-pictures">
+                    <div class="main-picture balloon-old-main"></div>
+                    <div class="main-picture five-days-old-main"></div>
+                    <div class="main-picture knight-old-main"></div>
+                    <div class="main-picture main-pic-top"></div>
+                    <div class="main-picture masons-old-main"></div>
+                    <div class="main-picture mountains-old-main"></div>
+                    <div class="main-picture slice-old-main"></div>
+                    <div class="main-picture text-old-main"></div>
+                    <div class="main-picture vitruvian-man-old-main"></div>
+                    <div class="main-picture wind-rose-old-main"></div>
+                    <div class="main-picture town-old-main"></div>
+                </div>
+
+                <div class="container">
+
+                    <div class="content">
+
+                        <div class="btn-block">
+                            <button class="btn btn-primary">Начать игру</button>
+                            <button class="btn btn-secondary">Регистрация</button>
+                        </div>
+                        <div class="video">
+                            <iframe id="youtube" width="660" height="359"
+                                    src="https://www.youtube.com/embed/IuHnAq6PMT4?rel=0&enablejsapi=1" frameborder="0"
+                                    allowfullscreen></iframe>
+                            <span class="title-video">начать просмотр демо ролика</span>
+                            <span id="btn-video" class="bg-video"></span>
+                            <a href="javascript:void(0)" id="play" class="link link-video"></a>
+
+                            <script src="http://www.youtube.com/player_api"></script>
+                            <script>
+                                var play;
+                                function onYouTubePlayerAPIReady() {
+                                    play = new YT.Player('youtube', {videoId: 'IuHnAq6PMT4'});
+                                    document.getElementById('btn-video').onclick = function () {
+                                        play.playVideo();
+                                        $('#play').hide();
+                                        $('#btn-video').hide();
+                                    };
+                                    document.getElementById('play').onclick = function () {
+                                        play.playVideo();
+                                        $('#play').hide();
+                                        $('#btn-video').hide();
+                                    };
+                                }
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-copyright">
+                    <span class="footer-copyright__item">© Open game 2017</span>
+                </div>
+                <div class="social">
+                    <ul class="social-list">
+                        <li class="social-list__item social-list__item--fb">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--vk">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--tw">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--inst">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--ok">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-author">
+                    <a href="https://vk.com/cv_aware" target="_blank" class="footer-author__link">
+                        <span class="footer-author__item">designed by</span>
+                        <span class="footer-author__title">Aware</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/jquery-3.1.1.min.js"></script>
+
+    <script src="scripts/theGame.js"></script>
+
+    </body>
+</html>
