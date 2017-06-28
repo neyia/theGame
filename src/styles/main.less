@@ -1,0 +1,232 @@
+@import "mixins";
+
+.main {
+    position: relative;
+}
+
+.main-pictures {
+    position: absolute;
+    z-index:  0;
+    bottom:   0;
+    right:    0;
+    left:     0;
+    top:      0;
+}
+
+.main-picture {
+    position:            absolute;
+    background-repeat:   no-repeat;
+    background-size:     contain;
+    background-position: 0;
+}
+
+.balloon-old-main {
+    background-image: url(../images/main/balloon-old-main.png);
+    //width:            81px;
+    width:            5.786rem;
+    //height:           164px;
+    height:           11.71rem;
+    //right:            417px;
+    right:            29.79rem;
+    //bottom:           318px;
+    bottom:           22.71rem;
+}
+
+.five-days-old-main {
+    background-image: url(../images/main/five-days-old-main.png);
+    background-size:  cover;
+    //width:            670px;
+    width:            47.86rem;
+    //height:           197px;
+    height:           14.07rem;
+    //left:             621px;
+    //left:             44.36rem;
+    left:             50%;
+    //top:              282px;
+    //top:              20.14rem;
+    top:              50%;
+    margin:           -16.5rem 0 0 -23.5rem;
+}
+
+.knight-old-main {
+    background-image: url(../images/main/knight-old-main.png);
+    //width:            343px;
+    width:            24.5rem;
+    //height:           329px;
+    height:           23.5rem;
+    // bottom:           -40px;
+    bottom:           -2.857rem;
+    //left:             315px;
+    left:             22.5rem;
+}
+
+.masons-old-main {
+    background-image: url(../images/main/masons-old-main.png);
+    //width:            360px;
+    width:            25.71rem;
+    //height:           557px;
+    height:           39.79rem;
+    left:             0;
+    //bottom:           -53px;
+    bottom:           -3.786rem;
+}
+
+.town-old-main {
+    background-image: url(../images/main/town-old-main.png);
+    background-size:  cover;
+    //width: 856px;
+    width:            61.14rem;
+    //height: 380px;
+    height:           27.14rem;
+    //right: -70px;
+    right:            -5rem;
+    //bottom: 69px;
+    bottom:           4.929rem;
+}
+
+.mountains-old-main {
+    background-image: url(../images/main/mountains-old-main.png);
+    //width:            254px;
+    width:            18.14rem;
+    ///height:           149px;
+    height:           10.64rem;
+    //left:             9px;
+    left:             0.6429rem;
+    //top:              345px;
+    top:              24.64rem;
+}
+
+.slice-old-main {
+    background-image: url(../images/main/slice-main-clear.png);
+    background-size:  cover;
+    //width:            370px;
+    width:            27.43rem;
+    //height:           330px;
+    height:           24.57rem;
+    //top:              30px;
+    top:              2.143rem;
+    //left:             772px;
+    //left:             55.14rem;
+    left:             50%;
+    margin-left:      -13rem;
+}
+
+.text-old-main {
+    background-image: url(../images/main/text-old-main.png);
+    //width:            616px;
+    width:            44rem;
+    //height:           391px;
+    height:           27.93rem;
+    left:             0;
+    //top:              -40px;
+    top:              -2.857rem;
+}
+
+.vitruvian-man-old-main {
+    background-image: url(../images/main/vitruvian-man-old-main.png);
+    background-size:  cover;
+    //width:            500px;
+    width:            35.71rem;
+    //height:           500px;
+    height:           35.71rem;
+    //right:            10px;
+    right:            0.7143rem;
+    //top:              -2px;
+    top:              -0.1429rem;
+}
+
+.wind-rose-old-main {
+    background-image: url(../images/main/wind-rose-old-main.png);
+    //width:            256px;
+    width:            18.29rem;
+    //height:           256px;
+    height:           18.29rem;
+    //top:              287px;
+    top:              20.5rem;
+    //left:             315px;
+    left:             22.5rem;
+}
+
+.main-pic-top {
+    background-image:    url(../images/main/main-pic-top.png);
+    background-position: 50% 0;
+    background-size:     cover;
+    //width:               400px;
+    width:               28.57rem;
+    //height:              330px;
+    height:              23.57rem;
+    //top:                 34px;
+    top:                 2.429rem;
+    //left:                106px;
+    left:                7.571rem;
+    z-index:             2;
+}
+
+.main-pic-bottom {
+    background-image: url(../images/main/main-pic-bottom.png);
+    //width:            664px;
+    width:            47.43rem;
+    //height:           448px;
+    height:           32rem;
+    //bottom:           -49px;
+    //bottom:           -3.5rem;
+    bottom: -0.4rem;
+    //right:            -15px;
+    right:            -1.071rem;
+    z-index:          2;
+}
+
+.main .container {
+    justify-content: center;
+}
+
+.title-video {
+    .font-styles(32px, 36px, 400);
+    font-family:    "Bebas Neue Regular";
+    position:       absolute;
+    color:          #ffffff;
+    text-align:     center;
+    margin-left:    -185px;
+    display:        block;
+    letter-spacing: 0.05em;
+    top:            55px;
+    left:           50%;
+    z-index:        2;
+}
+
+.main .content {
+    flex:            0 660px;
+    flex-flow:       column;
+    justify-content: center;
+    text-align:      center;
+    display:         flex;
+    margin-top:      45%;
+    z-index:         1;
+}
+
+.video {
+    margin-bottom: 7.5%;
+    position:      relative;
+    text-align:    center;
+}
+
+iframe {
+    //border-radius: 12px;
+    border-radius: 0.8571rem;
+}
+
+.bg-video {
+    box-shadow:          0 3px 5px rgba(15, 15, 13, 0.35);
+    background-image:    url(../images/video-bg.png);
+    border-radius:       0.8571rem;
+    position:            absolute;
+    background-size:     contain;
+    width:               660px;
+    height:              359px;
+    background-position: 50% 0;
+    top:                 0;
+    left:                0;
+}
+.main .btn-secondary{
+    margin-left: auto;
+}

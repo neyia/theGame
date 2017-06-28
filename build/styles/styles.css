@@ -16,8 +16,13 @@
     padding: 0 4%;
   }
 }
+html {
+  min-width: 980px;
+  font-size: 100%;
+}
 body {
   font-family: "Bebas Neue Regular", "Trebuchet MS";
+  font-size: 1.4rem;
 }
 .page-wrapper {
   min-height: 100vh;
@@ -25,6 +30,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
 }
 .page-content {
   background-image: url("../images/bg-old-paper.png");
@@ -40,6 +46,11 @@ body {
     -ms-flex: auto;
     flex: auto;
   }
+}
+.page-content--main {
+  background-color: rgba(206, 206, 188, 0.81);
+  background-image: url(../images/main/bg-old-main-clear.png);
+  box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.9);
 }
 .control::-webkit-input-placeholder {
   font-size: 20px;
@@ -72,4 +83,34 @@ body {
   font-family: "Minion-Pro", "Sans";
   color: #8c959e;
   font-style: italic;
+}
+@media (min-width: 1910px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1910px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1780px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1580px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
 }
