@@ -21,6 +21,13 @@
   padding: 8px 0 2px 0;
   margin-top: -5px;
 }
+.title__text--dark {
+  background-image: url(../images/badge-title-bg--dark.png);
+  color: #ffffff;
+  letter-spacing: 2px;
+  background-size: contain;
+  padding: 8px 0 0 0;
+}
 .content {
   -ms-flex: 0 64.45%;
   flex: 0 64.45%;

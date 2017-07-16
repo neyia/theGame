@@ -58,5 +58,5 @@ function counter() {
 window.onload = function () {
     counter();
 
-}
+};
 

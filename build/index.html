@@ -19,6 +19,8 @@
         <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
         <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/screen.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/popup.css"/>
 
     <body>
 
@@ -46,8 +48,8 @@
                     <div class="content">
 
                         <div class="btn-block">
-                            <button class="btn btn-primary">Начать игру</button>
-                            <button class="btn btn-secondary">Регистрация</button>
+                            <button class="btn btn-primary" id="btn-auth" data-popup="2">Начать игру</button>
+                            <button class="btn btn-secondary" id="btn-registration" data-popup="1">Регистрация</button>
                         </div>
                         <div class="video">
                             <iframe id="youtube" width="660" height="359"
@@ -115,11 +117,60 @@
             </div>
         </div>
 
+        <div class="popup" id="popup-auth" data-popup="2">
+            <a href="javascript:void(0)" class="close-block__link"></a>
+            <div class="title">
+                <div class="title__text title__text--dark">open game</div>
+                <div class="title__text">авторизация</div>
+            </div>
+            <div class="form-content">
+                <form id="" action="" method="" class="form-popup">
+                    <label class="form-popup__label" for="login-popup">
+                        <input id="login-popup" class="control control-input" type="text" name="login-popup" placeholder="Логин"/>
+                    </label>
+                    <label class="form-popup__label" for="email-popup">
+                        <input id="email-popup" class="control control-input" type="password" name="email-popup" placeholder="Пароль"/>
+                    </label>
+                    <div class="form-remember">
+                        <label class="form-popup__label" for="remember-popup">
+                            <input id="remember-popup" class="checkbox" type="checkbox" name="remember-popup"/>
+                            <span class="form-popup__title">Запомнить меня</span>
+                        </label>
+                        <a href="javascript:void(0)" class="link link-primary">
+                            Забыли пароль?
+                        </a>
+                    </div>
+                    <div class="btn-block btn-block--popup">
+                        <button class="btn btn-primary" type="submit">Войти</button>
+                    </div>
+                </form>
+
+                <div class="social">
+                    <p class="sub-title form-popup__title">Вход через соц. сети</p>
+                    <ul class="social-list">
+                        <li class="social-list__item social-list__item--fb">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--vk">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--tw">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--inst">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                        <li class="social-list__item social-list__item--ok">
+                            <a href="javascript:void(0)" class="social-list__item-link"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="screen"></div>
     </div>
 
     <script src="scripts/jquery-3.1.1.min.js"></script>
-
-    <script src="scripts/theGame.js"></script>
-
+    <script src="scripts/popup.js"></script>
     </body>
 </html>
