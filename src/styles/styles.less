@@ -14,31 +14,38 @@
     }
 }
 
+html {
+    min-width: 980px;
+    font-size: 100%;
+}
+
 body {
     .font-family-bebas();
+    font-size: 1.4rem;
 }
 
 .page-wrapper {
     min-height:     100vh;
-    display: -ms-flexbox;
     display:        flex;
-    -ms-flex-direction: column;
     flex-direction: column;
-
-
+    overflow:       hidden;
 }
 
 .page-content {
-    background-image:    url("../images/bg-old-paper.png");
-    background-repeat:   no-repeat;
-    //background-position: center;
-    background-size:     cover;
-    padding:             40px 0 0;
-    flex:                1;
+    background-image:  url("../images/bg-old-paper.png");
+    background-repeat: no-repeat;
+    background-size:   cover;
+    padding:           40px 0 0;
+    flex:              1;
 
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         min-height: 100vh;
-        flex: auto;
+        flex:       auto;
+    }
+    &--main {
+        background-color: rgba(206, 206, 188, 0.81);
+        background-image: url(../images/main/bg-old-main-clear.png);
+        box-shadow:       inset 0px 0px 90px rgba(0, 0, 0, 0.90);
     }
 }
 
@@ -46,28 +53,64 @@ body {
     &::-webkit-input-placeholder {
         .font-styles(20px, normal, 400);
         .font-family-minion();
-        color:       #8c959e;
-        font-style:  italic;
+        color:      #8c959e;
+        font-style: italic;
     }
 
     &::-moz-placeholder {
         .font-styles(20px, normal, 400);
         .font-family-minion();
-        color:       #8c959e;
-        font-style:  italic;
+        color:      #8c959e;
+        font-style: italic;
     }
 
     &:-ms-input-placeholder {
         .font-styles(20px, normal, 400);
         .font-family-minion();
-        color:       #8c959e;
-        font-style:  italic;
+        color:      #8c959e;
+        font-style: italic;
     }
 
     &:-moz-placeholder {
         .font-styles(20px, normal, 400);
         .font-family-minion();
-        color:       #8c959e;
-        font-style:  italic;
+        color:      #8c959e;
+        font-style: italic;
+    }
+}
+
+@media (min-width: 1910px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1910px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1780px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1580px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 9px;
     }
 }
