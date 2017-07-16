@@ -143,6 +143,7 @@
   text-transform: uppercase;
   color: #e2e1cf;
   transition: all 1s;
+  letter-spacing: 0.5px;
   text-decoration: none;
 }
 .menu-item:hover .menu-item__link {
