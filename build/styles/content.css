@@ -1,5 +1,5 @@
 .title {
-  background-image: url(../images/badge-title-bg.png);
+  background-image: url(../images/badge-title-bg/badge-title-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -8,7 +8,7 @@
   padding: 30px 0;
 }
 .title__text {
-  background-image: url(../images/badge-text-bg.png);
+  background-image: url(../images/1badge-text-bg/y-badge-text-bg.png);
   background-repeat: no-repeat;
   font-size: 30px;
   line-height: normal;
@@ -22,7 +22,7 @@
   margin-top: -5px;
 }
 .title__text--dark {
-  background-image: url(../images/badge-title-bg--dark.png);
+  background-image: url(../images/1badge-text-bg/Untitled-1.png);
   color: #ffffff;
   letter-spacing: 2px;
   background-size: contain;
