@@ -26,7 +26,14 @@
 .popup .title .title__text {
   padding: 9px 0 3px 0;
   letter-spacing: 2.5px;
-  background-image: url(../images/1badge-text-bg/Untitled-2.png);
+  background-image: url(../images/badge-text-bg/y2-badge-text-bg.png);
+}
+.popup .title .title__text--dark {
+  background-image: url(../images/badge-text-bg/b-badge-text-bg.png);
+  color: #ffffff;
+  letter-spacing: 2px;
+  background-size: contain;
+  padding: 8px 0 0 0;
 }
 .popup .social {
   display: -ms-flexbox;

@@ -35,12 +35,12 @@ CountdownTimer.prototype = {
             }, 10);
         } else {
             this.elem.innerHTML = this.mes;
-            return;
+
         }
     }, addZero: function (num) {
         return ('0' + num).slice(-2);
     }
-}
+};
 function addReadyClass() {
     $('.badge-image__locker').addClass('badge-image__locker--ready');
 }
@@ -49,7 +49,7 @@ function removeReadyClass() {
 }
 function counter() {
     var tl = new Date('2019/01/01 00:00:00');
-    var mess = console.log('time is over')
+    var mess = console.log('time is over');
     var timer = new CountdownTimer('counter', tl, mess);
 
     timer.countDown();

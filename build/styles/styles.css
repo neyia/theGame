@@ -33,7 +33,7 @@ body {
   overflow: hidden;
 }
 .page-content {
-  background-image: url("../images/bg-old-paper.png");
+  background-image: url("../images/training/bg-old-paper.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0 0;
