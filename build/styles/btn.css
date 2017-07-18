@@ -8,12 +8,15 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
+.btn-block--popup {
+  margin: 0.45rem 0 2.5rem 0;
+}
 .btn {
   box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
-  font-family: 'Bebas Neue Regular';
+  font-family: 'Bebas Neue Regular', sans-serif;
   display: inline-block;
   width: 22.14rem;
   height: 4.786rem;
