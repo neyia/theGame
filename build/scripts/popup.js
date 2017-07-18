@@ -36,7 +36,7 @@
                         $screen.hide();
                         $regPopup.hide();
                     });
-            $regPopup.show().css('top', 100+'px');
+            $regPopup.show().css('top', 10+'px');
 
             $regPopup.find('.close-block__link')
                 .on('click', function (e) {
