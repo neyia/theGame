@@ -16,6 +16,10 @@
     background-color: #ffffff;
     box-shadow:       0 4px 12px 1px rgba(35, 45, 55, 0.15);
 
+    &--inside{
+        z-index: 13;
+    }
+
     .title {
         width:            100%;
         height:           140px;
@@ -206,4 +210,31 @@
 .form-captcha {
     padding:   30px 0 0 0;
     max-width: 290px;
+}
+
+.form-popup__label{
+    .message{
+        font-family: 'myriad-pro', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+    }
+}
+
+.form-popup__label--error{
+    .control-input{
+        border: 1px solid #ff4e00;
+    }
+    .message--error{
+        color: #ff4e00;
+    }
+}
+.form-popup__label--success{
+    .control-input {
+        border: 1px solid #009f5e;
+    }
+    .message--success{
+        color: #009f5e;
+    }
 }

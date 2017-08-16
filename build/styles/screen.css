@@ -12,3 +12,14 @@
 .screen:hover {
   cursor: url('http://html.opngame.com/icons/close.cur'), auto;
 }
+.screen--inside {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+  display: none;
+  position: fixed;
+  transition: all 0.15s ease-out;
+  background-color: rgba(0, 0, 0, 0.7);
+}

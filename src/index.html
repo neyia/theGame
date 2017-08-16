@@ -125,18 +125,20 @@
             </div>
             <div class="form-content">
                 <form id="" action="" class="form-popup">
-                    <label class="form-popup__label" for="login-popup">
+                    <label class="form-popup__label form-popup__label--error" for="login-popup">
                         <input id="login-popup" class="control control-input" type="text" name="login-popup" placeholder="Логин"/>
+                        <span class="message message--error">Пожалуйста, проверьте логин</span>
                     </label>
-                    <label class="form-popup__label" for="pass-popup">
+                    <label class="form-popup__label form-popup__label--success" for="pass-popup">
                         <input id="pass-popup" class="control control-input" type="password" name="pass-popup" placeholder="Пароль"/>
+                        <span class="message message--success">Пожалуйста, все правильно</span>
                     </label>
                     <div class="form-remember">
                         <label class="form-popup__label" for="remember-popup">
                             <input id="remember-popup" class="checkbox" type="checkbox" name="remember-popup"/>
                             <span class="form-popup__title">Запомнить меня</span>
                         </label>
-                        <a href="javascript:void(0)" class="link link-primary">
+                        <a href="javascript:void(0)" class="link link-primary" id="btn-forget" data-popup="3">
                             Забыли пароль?
                         </a>
                     </div>
@@ -230,7 +232,26 @@
                 </div>
             </div>
         </div>
+
+        <div class="popup popup--inside" id="popup-forgot" data-popup="3">
+            <div class="title">
+                <div class="title__text title__text--dark">open game</div>
+                <div class="title__text">Забыли пароль?</div>
+            </div>
+            <div class="form-content">
+                <form id="" action="" class="form-popup">
+                    <label class="form-popup__label" for="reg-login-popup">
+                        <input id="reg-login-popup" class="control control-input" type="text" name="reg-login-popup" placeholder="Логин"/>
+                    </label>
+                    <div class="btn-block btn-block--popup">
+                        <button class="btn btn-primary" type="submit">Прислать пароль</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <span class="screen"></span>
+        <span class="screen--inside"></span>
     </div>
 
     <script src="scripts/jquery-3.1.1.min.js"></script>
