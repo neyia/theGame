@@ -5,6 +5,7 @@
   background-color: #0f0f0d;
   padding: 18px 0;
   color: #808080;
+  z-index: 1;
 }
 .footer-author__title {
   color: #e3e3d1;
@@ -22,7 +23,7 @@
   background-position: center;
   margin: 0 9px;
   border-radius: 50%;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
 }
 .social-list__item-link {
   display: -ms-flexbox;

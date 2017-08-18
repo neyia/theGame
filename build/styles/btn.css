@@ -12,7 +12,7 @@
   margin: 0.45rem 0 2.5rem 0;
 }
 .btn {
-  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0);
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;
@@ -33,10 +33,12 @@
 }
 .btn-primary:hover {
   background-color: #0091ea;
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
 }
 .btn-secondary {
   background-color: #ffc363;
 }
 .btn-secondary:hover {
   background-color: #e3b05b;
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
 }

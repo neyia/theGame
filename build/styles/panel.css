@@ -147,7 +147,7 @@
   text-decoration: none;
 }
 .menu-item:hover .menu-item__link {
-  color: #ffc363;
+  color: #c38928;
 }
 .menu-item--active .menu-item__link {
   color: #ffc363;
