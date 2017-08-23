@@ -91,6 +91,24 @@
   top: 20.5rem;
   left: 22.5rem;
 }
+@media (max-width: 1600px) {
+  .wind-rose-old-main {
+    top: 19.5rem;
+    left: 18.5rem;
+  }
+}
+@media (max-width: 1436px) {
+  .wind-rose-old-main {
+    width: 17.29rem;
+    height: 17.29rem;
+  }
+}
+@media (max-width: 1352px) {
+  .wind-rose-old-main {
+    top: 21.5rem;
+    left: 14.5rem;
+  }
+}
 .main-pic-top {
   background-image: url(../images/main/main-pic-top.png);
   background-position: 50% 0;
