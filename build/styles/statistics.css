@@ -1,0 +1,65 @@
+.text-block {
+  padding: 25px 32px 20px 37px;
+  margin: -20px auto;
+  width: 99%;
+}
+.title__text {
+  letter-spacing: 0.17rem;
+}
+.text-block__title {
+  color: #dfdfce;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  box-sizing: border-box;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Minion Pro", Sans;
+  background-image: url(../images/text-block/text-block-title--bg.png);
+}
+.table {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+.table-thead__th {
+  border: 1px solid #ffc463;
+  color: #ffffff;
+  font-family: "Minion Pro", Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.table-thead__th:first-child {
+  text-align: left;
+  padding-left: 17px;
+}
+.table-body__td {
+  border: 1px solid #b0b396;
+  color: #e7e6d4;
+  font-family: "Minion Pro", Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.table-body__td:first-child {
+  text-align: left;
+  padding-left: 17px;
+}
+.text-block--footer {
+  background-image: url(../images/text-block/text-block-footer-bg--small.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin: 10px 0 0 0;
+  padding: 15px;
+  width: 100%;
+  z-index: 11;
+}

@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
         <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="styles/jquery.mCustomScrollbar.css"/>
         <link rel="stylesheet" type="text/css" href="styles/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="styles/normalized.css"/>
         <link rel="stylesheet" type="text/css" href="styles/panel.css"/>
@@ -83,69 +84,119 @@
                         <div class="title">
                             <div class="title__text">Статистика</div>
                         </div>
+
                         <div class="text-block text-block--statistics">
                             <p class="text-block__title">Личная статистика</p>
                             <div class="text-block__table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Ваш результат на текущий момент</th>
-                                            <th>55/5675 место</th>
+                                <table class="table">
+                                    <thead class="table-thead">
+                                        <tr class="table-thead__tr">
+                                            <th class="table-thead__th">Ваш результат на текущий момент</th>
+                                            <th class="table-thead__th">55/5675 место</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>С момента регистрации</td>
-                                            <td>50</td>
+                                    <tbody class="table-body">
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">С момента регистрации</td>
+                                            <td class="table-body__td">50</td>
                                         </tr>
-                                        <tr>
-                                            <td>Время, проведенное на сайте</td>
-                                            <td>3</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Время, проведенное на сайте</td>
+                                            <td class="table-body__td">3</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество начатых призовых игр</td>
-                                            <td>8</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество начатых призовых игр</td>
+                                            <td class="table-body__td">8</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество начатых тренировочных игр</td>
-                                            <td>18</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество правильных ответов в беспризовых играх</td>
+                                            <td class="table-body__td">1</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество правильных ответов в призовых играх</td>
-                                            <td>20</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество побед в призовых играх</td>
+                                            <td class="table-body__td">6</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество правильных ответов в беспризовых играх</td>
-                                            <td>1</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время ответа на вопрос</td>
+                                            <td class="table-body__td">12</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество побед в призовых играх</td>
-                                            <td>6</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время одной призовой игры</td>
+                                            <td class="table-body__td">60</td>
                                         </tr>
-                                        <tr>
-                                            <td>Количество побед в тренировочных играх играх</td>
-                                            <td>9</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время одной беспризовой игры</td>
+                                            <td class="table-body__td">50</td>
                                         </tr>
-                                        <tr>
-                                            <td>Лучшее время ответа на вопрос</td>
-                                            <td>12</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Сумма выйгрыша</td>
+                                            <td class="table-body__td">5000</td>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-block__title">Общая статистика</p>
+                            <div class="text-block__table">
+                                <table class="table">
+                                    <thead class="table-thead">
+                                        <tr class="table-thead__tr">
+                                            <th class="table-thead__th">Ваш результат на текущий момент</th>
+                                            <th class="table-thead__th">55/5675 место</th>
                                         </tr>
-                                        <tr>
-                                            <td>Лучшее время одной призовой игры</td>
-                                            <td>60</td>
+                                    </thead>
+                                    <tbody class="table-body">
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">С момента регистрации</td>
+                                            <td class="table-body__td">50</td>
                                         </tr>
-                                        <tr>
-                                            <td>Лучшее время одной беспризовой игры</td>
-                                            <td>5000</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Время, проведенное на сайте</td>
+                                            <td class="table-body__td">3</td>
                                         </tr>
-                                        <tr>
-                                            <td>Сумма выйгрыша</td>
-                                            <td>Body content 2</td>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество начатых призовых игр</td>
+                                            <td class="table-body__td">8</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество начатых тренировочных игр</td>
+                                            <td class="table-body__td">18</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество правильных ответов в призовых играх</td>
+                                            <td class="table-body__td">20</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество правильных ответов в беспризовых играх</td>
+                                            <td class="table-body__td">1</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество побед в призовых играх</td>
+                                            <td class="table-body__td">6</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Количество побед в тренировочных играх играх</td>
+                                            <td class="table-body__td">9</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время ответа на вопрос</td>
+                                            <td class="table-body__td">12</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время одной призовой игры</td>
+                                            <td class="table-body__td">60</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Лучшее время одной беспризовой игры</td>
+                                            <td class="table-body__td">5000</td>
+                                        </tr>
+                                        <tr class="table-body__tr">
+                                            <td class="table-body__td">Сумма выйгрыша</td>
+                                            <td class="table-body__td">500 000</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+
                         <div class="text-block text-block--footer"></div>
                     </div>
                 </div>
@@ -188,8 +239,18 @@
     </div>
 
     <script src="scripts/jquery-3.1.1.min.js"></script>
-
+    <script src="scripts/jquery.mCustomScrollbar.js"></script>
     <script src="scripts/theGame.js"></script>
+    <script>
+        (function ($) {
+            $(window).on("load", function () {
 
+                $(".text-block--statistics").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+            });
+        })(jQuery);
+    </script>
     </body>
 </html>
