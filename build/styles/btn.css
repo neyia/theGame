@@ -30,6 +30,7 @@
 }
 .btn-primary {
   background-color: #00b0ff;
+  transition: all 0.3s ease-out;
 }
 .btn-primary:hover {
   background-color: #0091ea;
@@ -37,6 +38,7 @@
 }
 .btn-secondary {
   background-color: #ffc363;
+  transition: all 0.3s ease-out;
 }
 .btn-secondary:hover {
   background-color: #e3b05b;
