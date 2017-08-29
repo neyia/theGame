@@ -40,10 +40,10 @@
 }
 .masons-old-main {
   background-image: url(../images/main/masons-old-main.png);
-  width: 25.71rem;
-  height: 39.79rem;
-  left: 0;
-  bottom: -3.786rem;
+  width: 43rem;
+  height: 47rem;
+  left: -16rem;
+  bottom: -7.5rem;
 }
 .town-old-main {
   background-image: url(../images/main/town-old-main.png);
@@ -71,10 +71,10 @@
 }
 .text-old-main {
   background-image: url(../images/main/text-old-main.png);
-  width: 44rem;
-  height: 27.93rem;
-  left: 0;
-  top: -2.857rem;
+  width: 64rem;
+  height: 47.93rem;
+  left: -20rem;
+  top: -21.7rem;
 }
 .vitruvian-man-old-main {
   background-image: url(../images/main/vitruvian-man-old-main.png);
@@ -82,7 +82,7 @@
   width: 35.71rem;
   height: 35.71rem;
   right: 0.7143rem;
-  top: -0.1429rem;
+  top: 0.1rem;
 }
 .wind-rose-old-main {
   background-image: url(../images/main/wind-rose-old-main.png);
