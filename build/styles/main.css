@@ -1,5 +1,6 @@
 .main {
   position: relative;
+  height: 100%;
 }
 .main-pictures {
   position: absolute;
@@ -130,6 +131,7 @@
 .main .container {
   -ms-flex-pack: center;
   justify-content: center;
+  height: 100vh;
 }
 .title-video {
   font-size: 32px;
