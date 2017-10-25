@@ -52,6 +52,9 @@ body {
   background-image: url(../images/main/bg-old-main-clear.png);
   box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.4);
 }
+.help .content {
+  margin-top: 70px;
+}
 .control::-webkit-input-placeholder {
   font-size: 20px;
   line-height: normal;
