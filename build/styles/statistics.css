@@ -3,6 +3,9 @@
   margin: -20px auto;
   width: 99%;
 }
+.help .text-block {
+  padding: 42px 32px 20px 37px;
+}
 .title__text {
   letter-spacing: 0.17rem;
 }
@@ -14,6 +17,9 @@
   font-weight: 700;
   padding: 34px 0 40px 0;
   letter-spacing: 0.12rem;
+}
+.help .text-block__name {
+  padding: 25px 0;
 }
 .text-block__title {
   color: #dfdfce;

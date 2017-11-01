@@ -54,6 +54,14 @@ body {
 }
 .help .content {
   margin-top: 70px;
+  -ms-flex: 0 64%;
+  flex: 0 64%;
+}
+@media only screen and (max-width: 1080px) {
+  .help .content {
+    -ms-flex: 0 61%;
+    flex: 0 61%;
+  }
 }
 .control::-webkit-input-placeholder {
   font-size: 20px;

@@ -21,6 +21,16 @@
   padding: 8px 0 2px 0;
   margin-top: -5px;
 }
+.help .title {
+  background-image: url(../images/badge-title-bg/badge-title-bg--help.png);
+  padding: 40px 0;
+  margin-bottom: -1.7rem;
+}
+@media only screen and (max-width: 1300px) {
+  .help .title {
+    margin-bottom: -31px;
+  }
+}
 .content {
   -ms-flex: 0 64.45%;
   flex: 0 64.45%;
