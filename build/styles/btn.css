@@ -28,6 +28,9 @@
 .btn:active {
   outline: none;
 }
+.form-popup .btn.btn--small {
+  width: 113px;
+}
 .btn-primary {
   background-color: #00b0ff;
   transition: all 0.3s ease-out;

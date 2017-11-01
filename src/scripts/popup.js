@@ -3,6 +3,7 @@
         var $authPopup = $('#popup-auth');
         var $authBtn = $('#btn-auth');
         var $regPopup = $('#popup-registration');
+        var $exitBtn = $('#btn-exit');
 
         var $regBtn = $('#btn-registration');
         var $screen = $('.screen');
@@ -10,6 +11,27 @@
         var $forgetBtn = $('#btn-forget');
         var $screenInside = $('.screen--inside');
         var $forgotPopup = $('#popup-forgot');
+        var $exitPopup = $('#popup-exit');
+
+        $exitBtn.on('click', function (e) {
+            e.preventDefault();
+            var top = $(window).scrollTop();
+            $screen
+                .show()
+                .on('click', function (e) {
+                    e.preventDefault();
+                    $screen.hide();
+                    $exitPopup.hide();
+                });
+            $exitPopup.show().css('top', 100 + 'px');
+
+            $exitPopup.find('.close-block__link')
+                .on('click', function (e) {
+                    e.preventDefault();
+                    $exitPopup.hide();
+                    $screen.hide();
+                });
+        });
 
         $forgetBtn.on('click', function (e) {
             e.preventDefault();

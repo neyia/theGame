@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
         <link rel="stylesheet" type="text/css" href="styles/statistics.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-
+        <link rel="stylesheet" type="text/css" href="styles/screen.css"/>
     <body>
 
 
@@ -74,7 +74,8 @@
                                     <a href="javascript:void(0)" class="menu-item__link">статистика/рейтинг</a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="javascript:void(0)" class="menu-item__link">выход</a>
+                                    <a id="btn-exit"
+                                       href="javascript:void(0)" class="menu-item__link" data-popup="exit">выход</a>
                                 </li>
                             </ul>
                         </div>
@@ -166,12 +167,28 @@
                 </div>
             </div>
         </div>
+        <div class="popup popup--exit" id="popup-exit" data-popup="exit">
+            <div class="title">
+                <div class="title__text">вы уверены </div>
+                <div class="title__text title__text--dark">в своем решении ? </div>
+            </div>
+            <div class="form-content">
+                <form id="" action="" class="form-popup">
+                    <div class="form-content__picture"></div>
+                    <div class="btn-block btn-block--popup">
+                        <button class="btn btn-primary btn--small" type="submit">да</button>
+                        <button class="btn btn-primary btn--small" type="button">нет</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
+        <span class="screen"></span>
     </div>
 
     <script src="scripts/jquery-3.1.1.min.js"></script>
     <script src="scripts/jquery.mCustomScrollbar.js"></script>
-    <script src="scripts/theGame.js"></script>
+    <script src="scripts/popup.js"></script>
     <script>
         (function ($) {
             $(window).on("load", function () {
