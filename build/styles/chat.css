@@ -184,3 +184,38 @@
   background-color: #0091ea;
   box-shadow: 0 3px 5px rgba(12, 33, 55, 0.4);
 }
+.control-submit__icon {
+  width: 25px;
+  height: 21px;
+  background-image: url(../images/send.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 0 0 -2px;
+}
+.forum-form__item {
+  display: -ms-flexbox;
+  display: flex;
+}
+.control-submit--icon {
+  width: 48px;
+  height: 46px;
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
+  background-color: #00b0ff;
+  padding: 0;
+  border-radius: 50%;
+}
+.control-submit--icon:hover {
+  box-shadow: 0 3px 5px rgba(12, 33, 55, 0.4);
+  background-color: #0091ea;
+}
+.message .control-input {
+  -ms-flex: 0 95%;
+  flex: 0 95%;
+  border-radius: 24px;
+  border: 2px solid #ffd99e;
+  background-color: #ffffff;
+  padding: 10px 20px 10px 50px;
+}
