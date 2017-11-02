@@ -39,7 +39,7 @@
 }
 .forum-window{}
 
-.forum-messages{
+.forum-messages:last-child{
     padding-bottom: 30px;
 }
 
@@ -92,14 +92,28 @@
         letter-spacing: 1.16px;
     }
 }
+
 .forum-form{
     background-color: #ffffff;
     position: relative;
     padding: 20px;
     z-index: 2;
+    width: 99%;
+    margin: auto;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     &__item{
 
+    }
+    &__icon{
+        top: 50%;
+        left: 38px;
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        margin: -12px 0 0 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/smile.svg);
     }
 }
