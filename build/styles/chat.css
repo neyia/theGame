@@ -202,14 +202,19 @@
 .control-submit--icon {
   width: 48px;
   height: 46px;
-  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0);
   background-color: #00b0ff;
   padding: 0;
   border-radius: 50%;
+  outline: none;
+  transition: all 0.3s ease-out;
 }
 .control-submit--icon:hover {
-  box-shadow: 0 3px 5px rgba(12, 33, 55, 0.4);
+  box-shadow: 0 5px 13px rgba(12, 33, 55, 0.35);
   background-color: #0091ea;
+}
+.control-submit--icon:active {
+  box-shadow: 0 3px 5px rgba(12, 33, 55, 0.4);
 }
 .message .control-input {
   -ms-flex: 0 95%;
@@ -218,4 +223,5 @@
   border: 2px solid #ffd99e;
   background-color: #ffffff;
   padding: 10px 20px 10px 50px;
+  outline: none;
 }
