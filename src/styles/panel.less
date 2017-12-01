@@ -146,7 +146,20 @@
     }
     &-item {
         padding: 13px 0;
-
+        position: relative;
+        &__count{
+            position: absolute;
+            top: 50%;
+            margin: -15px 0 0 10px;
+            min-width: 30px;
+            text-align: center;
+            color: #0f0f0d;
+            padding: 6px 5px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #ffc363;
+            .font-styles(18px, 18px, 600);
+        }
         &__link {
             .font-styles(22px, 22px, 400);
             text-transform:  uppercase;

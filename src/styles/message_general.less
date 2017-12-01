@@ -1,0 +1,109 @@
+@import "mixins";
+
+.text-block--footer {
+    background-image: url(../images/text-block/text-block-footer-bg--small.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 10px 0 0 0;
+    padding: 15px;
+    width: 100%;
+    z-index: 11;
+}
+.forum-wrapper{
+    max-height: 42rem;
+    min-height: 20rem;
+    padding: 0;
+}
+
+.forum-messages--general{
+    .forum-message{
+        &__name{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__sub-picture{
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: -2px;
+        }
+        &__sub-item{
+
+        }
+        &__text{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+        }
+        &__sub-text{
+            width: 100%;
+            padding: 10px 12px;
+            position: relative;
+            background-color: #4a4a4c;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        &__text-count{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            min-width: 30px;
+            text-align: center;
+            margin: -15px 0 0 10px;
+            color: #0f0f0d;
+            padding: 6px 5px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: #ffc363;
+            .font-styles(18px, 18px, 600);
+        }
+    }
+
+}
+.forum-message{
+    padding: 10px 30px 0;
+
+    .horizontal-divider{
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-color: #464647;
+    }
+
+    &__msg{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+        flex-flow: column;
+        position: relative;
+    }
+
+
+}
+
+.forum-message:hover{
+    position: relative;
+    padding: 10px 30px 0;
+    background-color: #404041;
+    transition: all 0.3s ease-out;
+
+    .forum-message__msg{
+        position: initial;
+    }
+
+    .horizontal-divider{
+        position: absolute;
+        z-index: 1;
+    }
+}

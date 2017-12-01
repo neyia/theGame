@@ -19,7 +19,6 @@
         <link rel="stylesheet" type="text/css" href="styles/footer.css"/>
         <link rel="stylesheet" type="text/css" href="styles/statistics.css"/>
         <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="styles/settings.css"/>
 
     <body>
 
@@ -86,100 +85,12 @@
                             <div class="title__text">настройка</div>
                         </div>
 
-                        <div class="text-block text-block--settings">
+                        <div class="text-block text-block--statistics">
                             <p class="text-block__title">Сменить аватар</p>
-                            <form class="form-settings">
-                                <div class="form-row">
-                                    <div class="form-item form-avatar">
-                                        <label class="form-avatar__label">
-                                            <span class="form-avatar__image">
-                                                <img src="images/avatar/petr.png" class="form-avatar__picture" alt="petr"/>
-                                            </span>
-                                            <input type="radio" class="form-avatar__checkbox" name="selected_avatar"/>
-                                            <span class="form-avatar__name">
-                                                Петр1
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-item form-avatar">
-                                        <label class="form-avatar__label">
-                                            <span class="form-avatar__image">
-                                                <img src="images/avatar/alex.png" class="form-avatar__picture" alt="alex"/>
-                                            </span>
-                                            <input type="radio" class="form-avatar__checkbox" name="selected_avatar"/>
-                                            <span class="form-avatar__name">
-                                                А.Пушкин
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-item form-avatar">
-                                        <label class="form-avatar__label">
-                                            <span class="form-avatar__image">
-                                                <img src="images/avatar/albert.png" class="form-avatar__picture"
-                                                     alt="albert"/>
-                                            </span>
-                                            <input type="radio" class="form-avatar__checkbox" name="selected_avatar"/>
-                                            <span class="form-avatar__name">
-                                                А.эйнштейн
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-item form-avatar">
-                                        <label class="form-avatar__label">
-                                            <span class="form-avatar__image">
-                                                <img src="images/avatar/wolfgang.png" class="form-avatar__picture"
-                                                     alt="wolfgang"/>
-                                            </span>
-                                            <input type="radio" class="form-avatar__checkbox" name="selected_avatar"/>
-                                            <span class="form-avatar__name">
-                                                А.моцарт
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-item form-avatar">
-                                        <label class="form-avatar__label">
-                                            <span class="form-avatar__image">
-                                                <img src="images/avatar/Christopher.png" class="form-avatar__picture"
-                                                     alt="Christopher"/>
-                                            </span>
-                                            <input type="radio" class="form-avatar__checkbox" name="selected_avatar"/>
-                                            <span class="form-avatar__name">
-                                                х.колумб
-                                            </span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </form>
+                            <div class="text-block__table">
 
-                            <form class="form-settings">
-                                <p class="text-block__title">Сменить логин</p>
-                                <div class="form-row">
-                                    <div class="form-item form-item--input">
-                                        <input type="text" class="control control-input form-item__input"
-                                               placeholder="Ваш новый логин"/>
-                                        <button class="btn btn-primary form-item__btn" type="submit">
-                                            изменить
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
 
-                            <form class="form-settings">
-                                <p class="text-block__title">Сменить пароль</p>
-                                <div class="form-row">
-                                    <div class="form-item form-item--input">
-                                        <input type="password" class="control control-input form-item__input"
-                                               placeholder="Старый пароль"/>
-                                        <input type="password" class="control control-input form-item__input"
-                                               placeholder="Новый пароль"/>
-                                        <input type="password" class="control control-input form-item__input"
-                                               placeholder="Повторите пароль"/>
-                                        <button class="btn btn-primary form-item__btn " type="submit">
-                                            изменить
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
 
                         <div class="text-block text-block--footer"></div>
@@ -225,11 +136,12 @@
 
     <script src="scripts/jquery-3.1.1.min.js"></script>
     <script src="scripts/jquery.mCustomScrollbar.js"></script>
+    <script src="scripts/theGame.js"></script>
     <script>
         (function ($) {
             $(window).on("load", function () {
 
-                $(".text-block--settings").mCustomScrollbar({
+                $(".text-block--statistics").mCustomScrollbar({
                     theme: "minimal"
                 });
 
